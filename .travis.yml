@@ -9,4 +9,5 @@ before_install:
 # cache: cocoapods
 script:
 
+ - pwd
  - bundle exec fastlane test
