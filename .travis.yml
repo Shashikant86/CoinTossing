@@ -1,13 +1,14 @@
+os:
+  - osx
+language: generic
+sudo: required
+dist: trusty
 osx_image: xcode8
-language: objective-c
-language: ruby
-rvm:
-  - 2.2.3
 before_install:
+ - rvm use 2.3.3
  - gem install bundler
  - bundle install
 # cache: cocoapods
 script:
-
  - pwd
  - bundle exec fastlane test
