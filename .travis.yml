@@ -11,4 +11,5 @@ before_install:
 # cache: cocoapods
 script:
  - pwd
+ - xcrun simctl list 
  - bundle exec fastlane test
