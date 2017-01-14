@@ -5,11 +5,12 @@ sudo: required
 dist: trusty
 osx_image: xcode8
 before_install:
+ - rvm install 2.3.3 
  - rvm use 2.3.3
  - gem install bundler
  - bundle install
 # cache: cocoapods
 script:
  - pwd
- - xcrun simctl list 
+ - xcrun simctl list
  - bundle exec fastlane test
