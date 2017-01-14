@@ -3,7 +3,7 @@ lane :test do |options|
 
   scan_options = {
     scheme: scheme_to_test,
-    device: 'iPhone 7',
+    device: 'iPhone 7 (5F911B30-5F23-403B-9697-1DFDC24773C8)',
     output_directory: 'artifacts/tests',
     custom_report_file_name: 'report.xml'
   }
