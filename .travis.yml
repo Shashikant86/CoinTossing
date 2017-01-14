@@ -1,11 +1,10 @@
 os:
   - osx
-language: generic
-sudo: required
-dist: trusty
-osx_image: xcode8
+osx_image: xcode8.2
+xcode_sdk: iPhone 7 (10.0)
+language: objective-c
 before_install:
- - rvm install 2.3.3 
+ - rvm install 2.3.3
  - rvm use 2.3.3
  - gem install bundler
  - bundle install
